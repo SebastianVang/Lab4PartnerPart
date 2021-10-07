@@ -11,7 +11,7 @@ namespace ConsoleApp1
             
         }
         /// <summary>
-        /// This method checks if all elements are greater
+        /// This method checks if all elements are greater          :D
         /// than zero. If the number of rows = the number of columns
         /// and if both things are true, return true, false otherwise.
         /// </summary>
