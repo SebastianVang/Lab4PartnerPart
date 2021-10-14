@@ -65,5 +65,13 @@ namespace ConsoleApp1
             }
             return rowSumArr;
         }
+
+        public static void PrintRowSums(int[] rowSumArray)
+        {
+            for (int i = 0; i < rowSumArray.GetLength(0); ++i)
+            {
+                Console.WriteLine("Sum for row " + i + ": " + rowSumArray[i] + "\n");
+            }
+        }
     }
 }
