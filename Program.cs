@@ -5,15 +5,11 @@ namespace ConsoleApp1
     class Program
     {
       
-       /* static void Main(string[] args)
+        static void Main(string[] args)
         {
-            int[,] arr = new int[,] { { 1, 2 }, { 3, 4 }, { 5, 6 }, { 7, 8 } };
-            for (int i = 0; i < 4; i++)
-            {
-                Console.WriteLine(RowSum(arr)[i]);
-            }
-            
-        }*/
+            int[,] arr = new int[,] { { 0, 1 }, { 1, 2 }, { 2, 3}, { 3, 4 } };
+            PrintRowSums(RowSum(arr));
+        }
         /// <summary>
         /// This method checks if all elements are greater          :D
         /// than zero. If the number of rows = the number of columns
