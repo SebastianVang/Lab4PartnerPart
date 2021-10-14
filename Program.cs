@@ -5,11 +5,15 @@ namespace ConsoleApp1
     class Program
     {
       
-        static void Main(string[] args)
+       /* static void Main(string[] args)
         {
+            int[,] arr = new int[,] { { 1, 2 }, { 3, 4 }, { 5, 6 }, { 7, 8 } };
+            for (int i = 0; i < 4; i++)
+            {
+                Console.WriteLine(RowSum(arr)[i]);
+            }
             
-            
-        }
+        }*/
         /// <summary>
         /// This method checks if all elements are greater          :D
         /// than zero. If the number of rows = the number of columns
@@ -47,5 +51,19 @@ namespace ConsoleApp1
 
             return isDiagonal & isSquare;
         }//end isDiagonal Method
+        
+        public static int[] RowSum(int[,] bigArr)
+        {
+            int[] rowSumArr = new int[bigArr.GetLength(0)];
+            for (int i = 0; i < bigArr.GetLength(0); i++)
+            {
+                rowSumArr[i] = 0;
+                for (int j = 0; j < bigArr.GetLength(1); j++)
+                {
+                    rowSumArr[i] += bigArr[i,j];
+                }
+            }
+            return rowSumArr;
+        }
     }
 }
